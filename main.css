@@ -3,6 +3,16 @@ html, body, h1, h2, h3, p, ol, ul, li, a {
     border: 0;
     margin: 0;
 }
+body {
+    font-family: 'Assistant', 'Squada One', sans-serif;
+}
+h1 {
+    font-family: 'Squada One', 'Assistant', sans-serif;    
+    font-size: 85px;
+    color: white;
+    text-align: center;
+    padding-top: 120px;
+}
 h2 {
     font-family: 'Assistant', 'Squada One', sans-serif;
     font-size: 15px;
@@ -24,13 +34,6 @@ form {
 }
 
 
-.maincontent h1 {
-    font-family: 'Squada One', 'Assistant', sans-serif;    
-    font-size: 85px;
-    color: white;
-    text-align: center;
-    padding-top: 120px;
-}
 .maincontent h2 {
     font-size: 20px;
     text-align: center;
@@ -50,20 +53,26 @@ form {
     align-items: center;
     justify-content: center;
 }
-.header {
+
+#header {
     padding-top: 20px;
     padding-bottom: 20px;
     font-family: 'Assistant', 'Squada One', sans-serif;
     text-align: center;
-    background-color: #666666;
-    background-image: url(pictures/blackbg.jpg);
+    background-color: black;
+    clear: both; 
+    height: 35px;
 }
-.header a {
+.fix {
+    clear: both;
+}
+#header a {
     font-size: 20px;
     color: white;
 }
-.header li {
-    display: inline;
+
+#header li {
+    display: inline-block;
     padding-left: 30px;
     padding-right: 30px;
 }
@@ -83,4 +92,44 @@ form {
     background-color: #7d7d7d;
     border: 1px solid white;
     margin-bottom: 5px;
+}
+#header #floatright{
+    float: right;
+}
+#header #floatleft  {
+    float: left;
+}
+#main {
+    float: left;
+    
+    display: inline-block;
+}
+#mainboxes a {
+    color: white;
+    background-color: #a0a89d;
+    display: block;
+    padding: 5px 30px 5px 30px;
+    text-align: center;
+}
+#mainboxes {
+   width: 400px;
+   background-color: black;
+   margin: 10px 20px;
+}
+#mainboxes h2 {
+    font-size: 30px;
+    padding: 5px 5px;
+    color: white;
+}
+
+#mainboxes p{
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.floater {
+    float: left;
+    border: 1px solid white;
+    color: white;
 }
