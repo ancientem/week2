@@ -61,8 +61,16 @@ form {
     text-align: center;
     background-color: black;
     clear: both; 
-    height: 35px;
+    display: flex;
+    justify-content: space-around;
 }
+
+ul li:first-child {justify-content: flex-start;}
+ul li:nth-child(2) {justify-content: flex-end;}
+ul li:nth-child(3) {justify-content: flex-end;}
+ul li:nth-child(4) {justify-content: flex-end;}
+ul li:last-child {justify-content: flex-end;}
+
 .fix {
     clear: both;
 }
@@ -93,16 +101,12 @@ form {
     border: 1px solid white;
     margin-bottom: 5px;
 }
-#header #floatright{
-    float: right;
-}
-#header #floatleft  {
-    float: left;
-}
+
+
 #main {
-    float: left;
-    
-    display: inline-block;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
 }
 #mainboxes a {
     color: white;
@@ -110,9 +114,11 @@ form {
     display: block;
     padding: 5px 30px 5px 30px;
     text-align: center;
+    margin: 5px;
 }
 #mainboxes {
-   width: 400px;
+   width: 300px;
+   height: 400px;
    background-color: black;
    margin: 10px 20px;
 }
@@ -125,8 +131,7 @@ form {
 #mainboxes p{
     color: white;
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 30px;
+    padding: 20px 7px 20px 7px;
 }
 .floater {
     float: left;
